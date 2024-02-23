@@ -9,6 +9,8 @@ The application consists of a single Python script (`app.py`) and a Dockerfile f
 ## How to Use
 
 To use this application, you need to have Docker installed on your machine. Then, you can build the Docker image and run a container with the following commands:
+First, clone the repository to your machine
+Replace `<your-api-token>` with your actual API token and verify the value set for `<your-api-endpoint>` is the correct endpoint.
 
 ```bash
 # Build the Docker image
@@ -18,8 +20,6 @@ docker build -t thousandeyes-api .
 
 docker run --rm thousandeyes-app  
 ```
-
-Replace `<your-api-token>` with your actual API token and verify the value set for `<your-api-endpoint>` is the correct endpoint.
 
 ## Scan with Trivy
 ```bash
