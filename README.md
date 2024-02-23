@@ -61,6 +61,40 @@ After installing Trivy, you can use it to scan your Docker images for vulnerabil
 # Scan the Docker image
 trivy image thousandeyes-api 
 ```
+**For Linux users**
+
+For Linux users, you can install Trivy by downloading the binary from the GitHub releases page. Here's how you can do it:
+
+1. Open a terminal.
+
+2. Download the latest Trivy binary. Replace `{VERSION}` with the version number you want to download. You can find the latest version number on the [Trivy releases page](https://github.com/aquasecurity/trivy/releases).
+
+```bash
+wget https://github.com/aquasecurity/trivy/releases/download/{VERSION}/trivy_{OS}_{ARCH}.tar.gz
+```
+
+Replace `{OS}` and `{ARCH}` with your operating system and architecture, respectively. For most modern systems, `{OS}` would be `Linux` and `{ARCH}` would be `64bit`.
+
+3. Extract the downloaded tar.gz file:
+
+```bash
+tar zxvf trivy_{OS}_{ARCH}.tar.gz
+```
+
+4. Move the Trivy binary to a directory in your PATH, such as `/usr/local/bin`:
+
+```bash
+sudo mv trivy /usr/local/bin
+```
+
+5. Verify the installation by checking the Trivy version:
+
+```bash
+trivy -v
+```
+
+After installing Trivy, you can use it to scan your Docker images for vulnerabilities. Remember to update Trivy's vulnerability database regularly with `trivy image --download-db-only`.
+
 Trivy scans are located in the /scans directory
 
 ## Security Considerations
