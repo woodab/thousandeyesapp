@@ -22,6 +22,41 @@ docker run --rm thousandeyes-app
 ```
 
 ## Scan with Trivy
+
+**For macOS users:**
+
+You can install Trivy using Homebrew:
+
+1. If you haven't installed Homebrew yet, open Terminal and install it with the following command:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+2. Once Homebrew is installed, you can install Trivy with the following command:
+
+```bash
+brew install aquasecurity/trivy/trivy
+```
+
+**For Windows users:**
+
+You can install Trivy using Chocolatey:
+
+1. If you haven't installed Chocolatey yet, open PowerShell as an administrator and install it with the following command:
+
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+```
+
+2. Once Chocolatey is installed, you can install Trivy with the following command:
+
+```powershell
+choco install trivy
+```
+
+After installing Trivy, you can use it to scan your Docker images for vulnerabilities. Remember to update Trivy's vulnerability database regularly with `trivy image --download-db-only`.
+
 ```bash
 # Scan the Docker image
 trivy image thousandeyes-api 
