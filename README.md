@@ -27,11 +27,7 @@ docker run --rm thousandeyes-app
 
 You can install Trivy using Homebrew:
 
-1. If you haven't installed Homebrew yet, open Terminal and install it with the following command:
-
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
+1. If you haven't installed Homebrew yet, see their website for guidance. [Homebrew](https://brew.sh/)
 
 2. Once Homebrew is installed, you can install Trivy with the following command:
 
@@ -43,11 +39,7 @@ brew install aquasecurity/trivy/trivy
 
 You can install Trivy using Chocolatey:
 
-1. If you haven't installed Chocolatey yet, open PowerShell as an administrator and install it with the following command:
-
-```powershell
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-```
+1. If you haven't installed Chocolatey yet, see their website for the latest guidance. [Chocolatey](https://chocolatey.org/install)
 
 2. Once Chocolatey is installed, you can install Trivy with the following command:
 
