@@ -21,6 +21,13 @@ docker run --rm thousandeyes-app
 
 Replace `<your-api-token>` with your actual API token and verify the value set for `<your-api-endpoint>` is the correct endpoint.
 
+## Scan with Trivy
+```bash
+# Scan the Docker image
+trivy image thousandeyes-api 
+```
+Trivy scans are located in the /scans directory
+
 ## Security Considerations
 
 This application follows several best practices for security:
