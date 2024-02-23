@@ -87,7 +87,7 @@ trivy -v
 
 After installing Trivy, you can use it to scan your Docker images for vulnerabilities. Remember to update Trivy's vulnerability database regularly with `trivy image --download-db-only`.
 
-Trivy scans are located in the /scans directory
+Trivy scans are located in the /scans directory.  There are two different sample scan outputs.  Each one uses a unique API key and test.
 
 ## Security Considerations
 
