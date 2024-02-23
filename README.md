@@ -26,16 +26,13 @@ docker run --rm thousandeyes-app
 
 1. If you haven't installed Trivy yet, see their website for guidance. [Trivy](https://aquasecurity.github.io/trivy/v0.18.3/installation/)
 
-2. Once Trivy is installed, you can start a scan with the following command:
+2. Once Trivy is installed and up to date, you can start a scan with the following command:
 
 ```bash
 trivy image thousandeyes-app
 ```
 
-
-After installing Trivy, you can use it to scan your Docker images for vulnerabilities. Remember to update Trivy's vulnerability database regularly with `trivy image --download-db-only`.
-
-Trivy scans are located in the /scans directory.  There are two different sample scan outputs.  Each one uses a unique API key and test.
+Trivy scans of this code base are located in the /scans directory.  There are two different sample scan outputs.  Each one uses a unique API key and test.
 
 ## Security Considerations
 
